@@ -1,5 +1,3 @@
-function greet(msg: string): string {
+export function greet(msg: string): string {
   return `hello ${msg}`
 }
-
-export default greet;
