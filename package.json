@@ -1,0 +1,16 @@
+{
+  "name": "@autopp/ts-hello",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
+}
