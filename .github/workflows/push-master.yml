@@ -14,7 +14,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '14'
-        check-latest: true
     - name: Get dependencies
       run: npm install
     - name: Run Test
