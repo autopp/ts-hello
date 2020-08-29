@@ -1,0 +1,23 @@
+name: push-master
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v2
+    - name: Set up Node.js 14.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14'
+        check-latest: true
+    - name: Get dependencies
+      run: npm install
+    - name: Run Test
+      run: npm test
+    - name: Build
+      run: npm run build
